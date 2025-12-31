@@ -29,6 +29,6 @@ Clone the repository or download the Python script to your local machine.
 Run the Script:
 Step 1 : Open a terminal or command prompt as administrator.
 Step 2 : Navigate to the folder where the script is located.
-Step 3 : Run the following command:-> python packet_sniffer.py
+Step 3 : Run the following command:-> python main.py
 
 This will start capturing 100 network packets on your device. 
