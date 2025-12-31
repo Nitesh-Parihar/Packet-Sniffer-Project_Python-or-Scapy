@@ -41,9 +41,12 @@ def create_gui():
         filter_settings["protocol"] = protocol_var.get()
         filter_settings["ip"] = ip_var.get()
 
-    def save_packets():
-        save_to_csv("captured_packets.csv")
+    # def save_packets():
+    #     save_to_csv("captured_packets.csv")
 
+    def save_packets():
+        filename = save_to_csv()
+        print(f"[+] Packets saved to {filename}")
     # ---------------- CONTROL BAR ----------------
     control_frame = tk.Frame(root)
     control_frame.pack(fill=tk.X)

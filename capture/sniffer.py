@@ -1,4 +1,4 @@
-from scapy.all import sniff, IP, TCP, UDP, ICMP
+from scapy.all import sniff, IP, TCP, UDP, ICMP, DNS
 from utils import globals
 from filters.filter_engine import apply_filters
 import time
@@ -14,7 +14,8 @@ def packet_handler(packet):
         proto = "UDP"
     elif ICMP in packet:
         proto = "ICMP"
-
+    elif DNS in packet:
+        proto = "DNS"
     packet_data = {
         "time": time.strftime("%H:%M:%S"),
         "src": packet[IP].src,

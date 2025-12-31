@@ -32,3 +32,4 @@ Step 2 : Navigate to the folder where the script is located.
 Step 3 : Run the following command:-> python main.py
 
 This will start capturing 100 network packets on your device. 
+
